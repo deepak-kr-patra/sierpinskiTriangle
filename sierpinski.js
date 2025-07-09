@@ -37,6 +37,9 @@ function drawTriangle() {
     ctx.closePath();
     ctx.strokeStyle = 'green';
     ctx.stroke();
+
+    const randomPoint = getRandomPointInTriangle();
+    cx = randomPoint.x, cy = randomPoint.y;
 }
 drawTriangle();
 
@@ -56,10 +59,29 @@ function resetCount() {
     toggleBtn.textContent = 'Run Iteration';
     count = 0;
     counter.textContent = `Iteration count: ${count}`;
-    cx = centerX, cy = centerY;
 
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     drawTriangle();
+}
+
+function getRandomPointInTriangle() {
+    let A = trianglePoints[0];
+    let B = trianglePoints[1];
+    let C = trianglePoints[2];
+    let u = Math.random();
+    let v = Math.random();
+
+    // To ensure (1 - u - v) is not less than 0. Basically reflect if outside triangle
+    if (u + v > 1) {
+        u = 1 - u;
+        v = 1 - v;
+    }
+
+    // Apply barycentric formula:
+    const x = (1 - u - v) * A.x + u * B.x + v * C.x;
+    const y = (1 - u - v) * A.y + u * B.y + v * C.y;
+
+    return { x, y };
 }
 
 function drawPoint(x, y) {
@@ -82,8 +104,3 @@ function drawNewPoint() {
 
     requestAnimationFrame(drawNewPoint);
 }
-
-// function drawRandomPoint(x, y) {
-//     drawPoint(x, y);
-//     drawNewPoint(x, y);
-// }
