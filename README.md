@@ -18,17 +18,6 @@ You can:
 
 ---
 
-## 📂 Project Structure
-
-sierpinski-triangle/
-│
-├── index.html # Main HTML file (canvas + buttons)
-├── sierpinski.js # Core logic (triangle drawing + iteration)
-└── sierpinski.css # Styling for layout and visuals
-
-
----
-
 ## 🧠 How It Works
 
 ### 🔺 Triangle Setup
@@ -54,6 +43,8 @@ sierpinski-triangle/
 ```bash
 git clone https://github.com/<your-username>/sierpinski-triangle.git
 cd sierpinski-triangle
+
+### 2️⃣ Open the Project
 
 Simply open the index.html file in your browser:
 open index.html
