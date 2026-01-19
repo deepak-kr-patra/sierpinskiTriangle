@@ -43,6 +43,7 @@ You can:
 ```bash
 git clone https://github.com/<your-username>/sierpinski-triangle.git
 cd sierpinski-triangle
+```
 
 ### 2️⃣ Open the Project
 
