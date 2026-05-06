@@ -1,4 +1,4 @@
-# 🧩 Sierpiński Triangle Generator
+# Sierpiński Triangle Generator
 
 This project visualizes the **Sierpiński Triangle**, a famous fractal, using pure **HTML, CSS, and JavaScript**.  
 It iteratively plots points using the **Chaos Game algorithm**, revealing a mesmerizing self-similar triangle pattern over time.
