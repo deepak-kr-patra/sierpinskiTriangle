@@ -42,7 +42,7 @@ You can:
 
 ```bash
 git clone https://github.com/deepak-kr-patra/sierpinskiTriangle.git
-cd sierpinski-triangle
+cd sierpinskiTriangle
 ```
 
 ### 2️⃣ Open the Project
