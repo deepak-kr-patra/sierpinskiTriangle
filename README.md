@@ -41,7 +41,7 @@ You can:
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/<your-username>/sierpinski-triangle.git
+git clone https://github.com/deepak-kr-patra/sierpinskiTriangle.git
 cd sierpinski-triangle
 ```
 
